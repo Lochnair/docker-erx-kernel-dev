@@ -25,6 +25,9 @@ ln -s ../isl-$ISL_VER isl
 ln -s ../mpc-$MPC_VER mpc
 ln -s ../mpfr-$MPFR_VER mpfr
 
+# Fix issue with newer versions of makeinfo
+wget -q -O- https://trac.macports.org/raw-attachment/ticket/53076/patch-gcc48-texi.diff | patch -p1
+
 # Binutils
 cd $BUILD_ROOT/binutils
 $SRC_ROOT/binutils-$BINUTILS_VER/configure --prefix=/opt/cross --target=$TARGET --disable-multilib --disable-werror

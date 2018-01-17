@@ -8,7 +8,7 @@ mkdir -p $BUILD_ROOT/binutils $BUILD_ROOT/gcc $SRC_ROOT
 cd /usr/src
 wget -nv \
 	http://ftp.gnu.org/gnu/binutils/binutils-$BINUTILS_VER.tar.xz \
-	http://ftp.gnu.org/gnu/gcc/gcc-$GCC_VER/gcc-$GCC_VER.tar.xz \
+	http://ftp.gnu.org/gnu/gcc/gcc-$GCC_VER/gcc-$GCC_VER.tar.bz2 \
 	http://ftp.gnu.org/gnu/gmp/gmp-$GMP_VER.tar.xz \
 	http://isl.gforge.inria.fr/isl-$ISL_VER.tar.xz \
 	http://ftp.gnu.org/gnu/mpc/mpc-$MPC_VER.tar.gz \

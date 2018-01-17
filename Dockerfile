@@ -10,6 +10,8 @@ ARG ISL_VER=0.18
 ARG MPC_VER=1.0.3
 ARG MPFR_VER=3.1.5
 
+ARG TARGET=mipsel-mtk-linux
+
 ENV PATH="/opt/cross/bin:${PATH}"
 
 COPY root/ /
